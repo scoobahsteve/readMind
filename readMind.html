@@ -1,22 +1,24 @@
 <script>
   var userName, name, userReady, message, answer;
 
-  userName = prompt("Hello, may I please have your name?");
+  function Username(name, age) {
+    this.name = prompt("can I have your name?");
+    this.age = age;
+};
+   var name1 = new Username;
+    alert("Very nice to meet you, " + name1.name + "!");
 
-  name = userName
-    alert("Very nice to meet you, " + name + "!");
-
-  userReady = prompt("I am going to try and read your mind, " + name + ", is that okay?");
+  userReady = prompt("I am going to try and read your mind, " + name1.name + ", is that okay?");
     if (userReady == "yes") {
-      message = "Alright, " + name + ", please think of a number.";
+      message = "Alright, " + name1.name + ", please think of a number.";
     } else {
-      message = "Very well, " + name + ", let me know when you are ready."
+      message = "Very well, " + name1.name + ", let me know when you are ready."
     };
     alert(message);
 
-    alert("Okay, " + name + ", please double the number that you are thinking of.");
+    alert("Okay, " + name1.name + ", please double the number that you are thinking of.");
 
-    alert("Now, " + name + ", go ahead and add 10 to this new number.");
+    alert("Now, " + name1.name + ", go ahead and add 10 to this new number.");
 
     alert("This time, I would like you to divide the number in halve.");
 
