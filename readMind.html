@@ -1,32 +1,35 @@
 <script>
   var userName, name, userReady, message, answer;
 
-  userName = prompt("Hello, may I please have your name?");
+  function Username(name, age) {
+    this.name = prompt("Can I have your name, please?");
+    this.age = age;
+  };
 
-  name = userName
-    alert("Very nice to meet you, " + name + "!");
+  var name1 = new Username;
+    alert("Very nice to meet you, " + name1.name + "!");
 
-  userReady = prompt("I am going to try and read your mind, " + name + ", is that okay?");
+  userReady = prompt("I am going to try and read your mind, " + name1.name + ", is that okay?");
     if (userReady == "yes") {
-      message = "Alright, " + name + ", please think of a number.";
+      message = "Alright, " + name1.name + ", please think of a number.";
     } else {
-      message = "Very well, " + name + ", let me know when you are ready."
+      message = "Too bad, " + name1.name + ", we are going to try this anyways. Please think of a number."
     };
     alert(message);
 
-    alert("Okay, " + name + ", please double the number that you are thinking of.");
+    alert("Okay, " + name1.name + ", please double the number that you are thinking of.");
 
-    alert("Now, " + name + ", go ahead and add 10 to this new number.");
+    alert("Now, " + name1.name + ", go ahead and add 10 to this new number.");
 
     alert("This time, I would like you to divide the number in halve.");
 
     alert("Go ahead and subtract your original number from the number you currently have.");
 
-  answer = prompt("I may be wrong, but is your number now 5?");
+  answer = prompt("I'll bet the number you eneded up with is 5, right?");
     if (answer == "yes") {
       message = "Ah hah! I knew I could read your mind!"
     } else {
-      message = "I'm sorry that I could not guess your number."
+      message = "I'm sorry, you might want to check your math and try again."
     };
     alert(message);
 </script>
