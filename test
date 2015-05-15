@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <!--This contains the metadata and title of the game-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!--ie edge isn't needed as much-->
+    <title>A Game that will blow your mind!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+    <body>
+      <!--This is the games name and image-->
+      <article>
+        <header>
+          <section>
+          <h1>I will read your mind!</h1>
+            <img src="http://www.jasoncapitaldating.com/wp-content/uploads/2013/08/howtoreadagirlsmind.jpg">
+          </section>
+        </header>
+          <!--This is the explanation of the game-->
+          <section>
+          <h2>In this quick and simple game, the computer will read your mind. After you have completed the game, you will be amazed that the computer knows your answer!
+          </h2>
+          </section>
+
+          <!--This is where the player enters their name-->
+          <section>
+            <h2>Please enter your name below to begin</h2>
+              <form action="form">
+              Username: <input type="text" name="usrname" placeholder="name" required autofocus>
+              <input type="submit">
+              </form>
+          </section>
+          <!--These are the rules of the game-->
+          <section>
+            <h2><b>Please follow the instructions provided as the game progresses, and remember:  </b>
+            </h2>
+            <!--A list of instructions for the game-->
+            <ul>
+              <li>Feel free to have multiple people try this at the same time if you wish.</li>
+              <li>Each person may choose a different number if they wish.</li>
+              <li>This game involves basic arithmatic, use a calculator or scratch paper if you have issues.</li>
+              <li>Try this as many times as you wish with different numbers if you like.</li>
+              <li>Most importantly, have fun!</li>
+            </ul>
+          </section>
+
+        <footer>
+          <!--The player can email me from this link-->
+          <h1>If you have comments, questions, or concerns feel free to send them to me directly!</h1>
+            <link type="email"><a href="stephen.salzer@icloud.com">Email Me!</a></link>
+        </footer>
+      </article>
+<script type="text/javascript">
+  window.onload = function() {
+  var userName, name, userReady, message, answer;
+
+  function Username(name, age) {
+    this.name = prompt("Can I have your name, please?");
+    this.age = age;
+  };
+
+  var player = new Username;
+    alert("Very nice to meet you, " + player.name + "!");
+
+  userReady = prompt("I am going to try and read your mind, " + player.name + ", is that okay?");
+    if (userReady == "yes") {
+      message = "Alright, " + player.name + ", please think of a number.";
+    } else {
+      message = "Too bad, " + player.name + ", we are going to try this anyways. Please think of a number."
+    };
+
+    alert(message);
+
+    alert("Okay, " + player.name + ", please double the number that you are thinking of.");
+
+    alert("Now, " + player.name + ", go ahead and add 10 to this new number.");
+
+    alert("This time, I would like you to divide the number in halve.");
+
+    alert("Go ahead and subtract your original number from the number you currently have.");
+
+  answer = prompt("I'll bet the number you ended up with is 5, right?");
+    if (answer == "yes") {
+      message = "Ah hah! I knew I could read your mind!"
+    } else {
+      message = "I'm sorry, you might want to check your math and try again."
+    };
+    alert(message);
+    alert("Thanks for playing!");
+  };
+</script>
+    </body>
+
+</html>
